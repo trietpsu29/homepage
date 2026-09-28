@@ -15,16 +15,6 @@ body {
 }
 
 @font-face {
-  font-family: "Playfair Display";
-  src:
-    url("PlayfairDisplay-Regular.woff2") format("woff2"),
-    url("PlayfairDisplay-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Roboto";
   src:
     url("Roboto-Regular.woff2") format("woff2"),
@@ -34,20 +24,12 @@ body {
   font-display: swap;
 }
 
-@font-face {
-  font-family: "playfair_displayregular";
-  src:
-    url("playfairdisplay-variablefont_wght-webfont.woff2") format("woff2"),
-    url("playfairdisplay-variablefont_wght-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 header {
   background-color: rgb(11, 162, 193);
   width: 100vw;
-  min-height: 89vh;
-  transform: skewY(-0.03turn) translateY(-40vh);
+  min-height: 500px;
+  transform: skewY(-0.03turn) translateY(-20vh);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   position: absolute;
   z-index: -1;
 }
@@ -69,7 +51,8 @@ footer {
   justify-content: flex-end;
   text-align: center;
   font-size: 1.5rem;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
   text-shadow: 0px 1px 20px rgba(0, 0, 0, 0.6);
   box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.15);
 }
@@ -79,6 +62,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 125px;
 }
 .top {
   display: flex;
@@ -91,8 +75,8 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-family: "Playfair Display";
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  line-height: 1.5;
 }
 .about-icon {
   display: flex;
@@ -101,9 +85,104 @@ main {
   padding: 15px;
   margin-top: 25px;
 }
+
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
 h2 {
   font-size: 2rem;
 }
-i {
+.top i {
   transform: scale(1.5);
+}
+p {
+  color: rgb(74, 74, 74);
+}
+
+.work-grid {
+  height: 100vh;
+}
+.work-info {
+  padding: 10px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  min-height: 150px;
+}
+.work-info p {
+  font-size: 0.8rem;
+}
+
+.work-img {
+  padding: 45px 60px 75px 60px;
+  width: 300px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Playfair Display";
+  font-size: 2rem;
+  flex-wrap: wrap;
+}
+
+.work-item {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+}
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work-icon i {
+  transform: scale(1.2);
+}
+
+.work-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.work-icon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.work-item-1 .work-img {
+  background-color: rgb(145 41 36);
+}
+
+.work-item-2 .work-img {
+  background-color: rgb(123 117 196);
+}
+
+.work-item-3 .work-img {
+  background-color: rgb(105 142 84);
+}
+
+.work-item-4 .work-img {
+  background-color: rgb(183 104 176);
+}
+
+.work-item-5 .work-img {
+  background-color: rgb(205 146 74);
+}
+
+.work-item-6 .work-img {
+  background-color: rgb(98 160 206);
+}
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.bot {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
