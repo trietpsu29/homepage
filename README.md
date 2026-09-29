@@ -1,6 +1,6 @@
 # Homepage
 
-This is the project from [The Odin Project](https://www.theodinproject.com/lessons/advanced-html-and-css-homepage) curriculum — a responsive homepage built with **HTML and CSS**.
+This is the project from [The Odin Project](https://www.theodinproject.com/lessons/advanced-html-and-css-homepage) curriculum — a responsive portfolio homepage built with **HTML and CSS**.
 
 ## Preview
 
