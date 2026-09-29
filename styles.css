@@ -251,6 +251,31 @@ h2 {
   flex-direction: column;
   gap: 10px;
 }
+
+.about-icon a,
+.work-icon a,
+.contact-icon a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.2s;
+}
+
+.work-item {
+  transition: transform 0.2s;
+}
+.work-item:hover {
+  transform: scale(1.02);
+}
+
+.about-icon a:hover,
+.work-icon a:hover,
+.contact-icon a:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+  color: black;
+}
+
 @media (min-width: 701px) and (max-width: 1200px) {
   p span {
     width: 250px;
