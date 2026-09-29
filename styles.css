@@ -298,4 +298,67 @@ h2 {
     gap: 50px;
     padding-top: 150px;
   }
+
+  .work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .contact-img {
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+  }
+
+  header {
+    min-height: 460px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1rem;
+    max-width: 400px;
+  }
+
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .contact p {
+    font-size: 0.9rem;
+  }
+
+  .phone,
+  .mail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+  }
+
+  .phone,
+  .mail {
+    margin-bottom: -10px;
+  }
+
+  .contact img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-icon {
+    display: flex;
+    gap: 15px;
+  }
+
+  .contact-icon i {
+    font-size: 25px;
+  }
+
+  .contact-icon img {
+    width: 25px;
+    height: 25px;
+  }
 }
